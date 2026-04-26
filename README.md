@@ -37,6 +37,17 @@ La comunicación entre frontend y backend se realiza mediante peticiones HTTP en
 
 ---
 
+## Estructura del proyecto
+
+El proyecto está organizado en dos directorios principales:
+
+- **/frontend**: Contiene la aplicación cliente desarrollada con React. Incluye componentes, vistas, estilos y lógica de interacción con la API.
+- **/backend**: Contiene la API REST desarrollada con Node.js y Express. Gestiona la lógica de negocio, autenticación y acceso a la base de datos.
+
+Dentro del backend se incluyen también los scripts de migración y seed de la base de datos.
+
+---
+
 ## Funcionalidades principales
 
 - Registro e inicio de sesión de usuarios
@@ -44,6 +55,17 @@ La comunicación entre frontend y backend se realiza mediante peticiones HTTP en
 - Clasificación por categorías
 - Visualización de datos financieros
 - Interfaz intuitiva y responsive
+
+---
+## Requisitos previos
+
+Antes de ejecutar la aplicación, es necesario disponer de las siguientes herramientas instaladas:
+
+- Node.js
+- npm
+- PostgreSQL
+
+Se recomienda utilizar versiones actualizadas para garantizar la compatibilidad.
 
 ---
 
@@ -75,7 +97,7 @@ DB_PASSWORD=tu_contraseña
 cd backend
 npm install
 npm run db:migrate
-npm run db:seed   # opcional — carga datos de ejemplo
+npm run db:seed   #carga las categorías iniciales necesarias para el funcionamiento de la aplicación
 ```
 
 ```bash
